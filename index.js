@@ -14,23 +14,12 @@ function increaseRankBy(n){
   }
 }
 
-/*function deepestChild(){
+function deepestChild(){
   var node = document.querySelector('div#grand-node');
+    var deepestNode = null;
     while(node){
-      if(node.innerHTML === 'boo!'){
-        return node
-      }
+      deepestNode = node;
       node = node.querySelector('div')
     }
-  return null
-}*/
-
-function deepestChild() {
-  var node = document.querySelector('div#grand-node');
-  var deepest = null;
-  while (node) {
-    deepest=node;
-    node = node.querySelector('*');
-  }
-  return deepest;
+  return deepestNode
 }
